@@ -1,12 +1,27 @@
 {
   "name": "DatumRNStarter",
   "version": "0.0.1",
-  "private": true,
+  "description": "quick start for datum-sdk using react-native",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "postinstall": "rn-nodeify --hack --install",
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Datum/datum-react-native-starter.git"
+  },
+  "keywords": [
+    "datum-sdk",
+    "react",
+    "react-native"
+  ],
+  "author": "Datum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Datum/datum-react-native-starter/issues"
+  },
+  "homepage": "https://github.com/Datum/datum-react-native-starter",
   "dependencies": {
     "@tradle/react-native-http": "^2.0.1",
     "assert": "^1.4.1",
