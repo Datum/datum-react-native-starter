@@ -4,11 +4,13 @@ These steps are only applicable if you are using react-native build tool.
 We are currently **only supporting the official react-native build tool**
 
 **As of now, we are not supporting Expo (Expo is not compatible with the datum-sdk)**
+**Also not supporting `yarn` since `rn-nodeify` uses `npm`**
 
 ## Quick Start
 1. clone this repo
-2. execute `yarn install`
+2. execute `npm install`
 3. execute `./node_modules/.bin/rn-nodeify --hack --install`
+3. link libraries by executing `react-native link`
 4. run your app
 > For Android: react-native run-android
 > For IOS : react-native run-ios
@@ -26,15 +28,11 @@ react-native init datum-qs
 cd datum-qs
 ```
 
-2. Make sure your react-native project can run before proceeding
+2. Make sure your react-native project can run before proceeding.
 
 3. Install the `datum-sdk`
 ```bash
 npm i --save datum-sdk  
-```
-or
-```bash
-yarn add datum-sdk
 ```
 
 4. Install additional dependencies
@@ -45,14 +43,7 @@ npm i --save-dev tradle/rn-nodeify
 # in ./node_modules to add/update the "browser"/"react-native" field with relevant mappings
 ./node_modules/.bin/rn-nodeify --hack --install
 ```
-or
-```bash
-yarn add react-native-crypto react-native-randombytes
-yarn add --dev tradle/rn-nodeify
-# install node core shims and recursively hack package.json files
-# in ./node_modules to add/update the "browser"/"react-native" field with relevant mappings
-./node_modules/.bin/rn-nodeify --hack --install
-```
+
 For more info, please refer to [this](https://www.npmjs.com/package/react-native-crypto)
 
 5. Create global.js file on your project_root that has the following
@@ -105,10 +96,6 @@ you just need to install them by doing:
 ```
 npm install --save-dev babel-preset-es2015-node5 babel-preset-stage-2
 ```
-or
-```
-yarn add --dev babel-preset-es2015-node5 babel-preset-stage-2
-```
 
 ### When running android, you may encounter this error:
 ```
@@ -149,6 +136,12 @@ subprojects {
   }}
 }
 ```
+
+### Commonly encountered react-native errors
+This is already out of scope, these may give you some help
+- config.h not found: https://github.com/facebook/react-native/issues/14382
+- libfishook.a not found: https://github.com/facebook/react-native/issues/19569
+
 
 ## Example
 
