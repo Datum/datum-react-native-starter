@@ -1,4 +1,4 @@
-package com.finaltest;
+package com.datumrnstarter;
 
 import android.app.Application;
 

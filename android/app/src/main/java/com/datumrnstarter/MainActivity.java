@@ -1,4 +1,4 @@
-package com.finaltest;
+package com.datumrnstarter;
 
 import com.facebook.react.ReactActivity;
 
