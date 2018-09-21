@@ -4,15 +4,16 @@ These steps are only applicable if you are using react-native build tool.
 We are currently **only supporting the official react-native build tool**
 
 **As of now, we are not supporting Expo (Expo is not compatible with the datum-sdk)**
+
 **Also not supporting `yarn` since `rn-nodeify` uses `npm`**
 
 ## Quick Start
 1. clone this repo
 2. execute `npm install`
-3. execute `./node_modules/.bin/rn-nodeify --hack --install`
 3. link libraries by executing `react-native link`
 4. run your app
 > For Android: react-native run-android
+
 > For IOS : react-native run-ios
 
 ## General SDK Setup Instructions
@@ -138,9 +139,9 @@ subprojects {
 ```
 
 ### Commonly encountered react-native errors
-This is already out of scope, these may give you some help
-- config.h not found: https://github.com/facebook/react-native/issues/14382
-- libfishook.a not found: https://github.com/facebook/react-native/issues/19569
+These resources may help with resolving some issues.
+- `config.h` not found: https://github.com/facebook/react-native/issues/14382
+- `libfishook.a` not found: https://github.com/facebook/react-native/issues/19569
 
 
 ## Example
