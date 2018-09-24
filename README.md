@@ -25,8 +25,8 @@ We are currently **only supporting the official react-native build tool**
 
 1. If you don't have an active project yet, create your `react-native` project using [react-native-cli](https://www.npmjs.com/package/react-native-cli).
 ```
-react-native init datum-qs
-cd datum-qs
+react-native init datumqs
+cd datumqs
 ```
 
 2. Make sure your react-native project can run before proceeding.
